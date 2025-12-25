@@ -10,6 +10,7 @@ import Topics from './Topics';
 import EditSub from './EditSub';
 import DeleteSub from './DeleteSub';
 import CreateTask from './CreateTask';
+import Task from './Task';
 
 function App() {
   
@@ -25,6 +26,7 @@ function App() {
       <Route path="/edit/:id/subject" element={<EditSub />} />
       <Route path="/create/:topicId/task" element={<CreateTask />} />
       <Route path="/create/:subjectId/topic" element={<CreateTopic />} />
+      <Route path="/:topicId/task" element={<Task />} />
     </Routes>
     </>
   )
